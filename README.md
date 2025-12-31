@@ -33,10 +33,23 @@ body{
 
 /* === MAIN CONTENT === */
 .container{
-  opacity:0;transition:opacity 1.2s ease;
-  position:relative;z-index:2;
-  max-width:600px;padding:25px;text-align:center;
-  margin:auto;top:50%;transform:translateY(-50%)
+  opacity:0;
+  transition:opacity 1.2s ease;
+  position:relative;
+  z-index:2;
+
+  max-width:600px;
+  padding:25px;
+  text-align:center;
+
+  /* 🔑 TRUE CENTERING */
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  margin:auto;
 }
 .show{opacity:1}
 
